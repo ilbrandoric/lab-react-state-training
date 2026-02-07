@@ -157,4 +157,28 @@ flowchart LR
   State -->|re-render| UI
 ```
 
+---
+
+## Counter.jsx Data Flow
+
+```mermaid
+flowchart LR
+  User[User] -->|click + / -| Counter[Counter Component]
+  Counter -->|setCount| State[count state]
+  State -->|re-render| Counter
+```
+
+---
+
+## Dice.jsx Data Flow
+
+```mermaid
+flowchart LR
+  User[User] -->|clicks dice| Dice[Dice Component]
+  Dice -->|setDice empty| State[Dice State]
+  State -->|timeout| Dice
+  Dice -->|setDice random| State
+  State -->|re-render| Dice
+```
+
 
