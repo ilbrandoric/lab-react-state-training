@@ -146,4 +146,15 @@ dice = "dice4.png" // ❌ forbidden
 setDice("dice4.png") // ✅
 ```
 
+---
+
+## Data Workflow Diagram
+
+```mermaid
+flowchart LR
+  User[User] -->|clicks| UI[UI Components]
+  UI -->|setState| State[Component State]
+  State -->|re-render| UI
+```
+
 
