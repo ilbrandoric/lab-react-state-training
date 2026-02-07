@@ -181,4 +181,5 @@ flowchart LR
   State -->|re-render| Dice
 ```
 
-
+**Notice** the 'double-loop' on this component: (1) First loop setting dice to 'blank'
+(2) Second loop, to random. 
